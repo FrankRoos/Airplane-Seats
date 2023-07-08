@@ -76,7 +76,8 @@
 
 ## Example Screenshot
 
-![Screenshot](./img/screenshot.jpg)
+![Screenshot](./img/seat-reservation1.PNG)
+![Screenshot](./img/seat-reservation2.PNG)
 
 ## Users Credentials
 
