@@ -1,0 +1,72 @@
+@APIURL=http://localhost:3000/api
+
+// GET LIST OF PLANES
+GET {{APIURL}}/planes
+
+###
+// ADD A NEW RESERVATION
+POST {{APIURL}}/planes/1/reservation
+Content-Type: application/json
+
+{ 
+    "date": "2023/07/02",
+    "planeType": "Local"
+}
+
+###
+
+// GET LIST OF RESERVATION OF THE SPECIFIED USER (id)
+GET {{APIURL}}/reservations
+
+###
+
+// DELETE A RESERVATION
+DELETE {{APIURL}}/reservations/2
+
+
+###
+
+// GET LIST OF SEATS OF THE SPECIFIED PLANE (id parameter)
+GET {{APIURL}}/planes/1/seats
+###
+GET {{APIURL}}/planes/2/seats
+###
+GET {{APIURL}}/planes/3/seats
+
+###
+// UPDATE OF AN EXISTING SEAT 
+PUT {{APIURL}}/planes/1/seats/1
+Content-Type: application/json
+
+{
+    "code": "1A",
+    "isReserved": 0, 
+    "reservationId": 0
+}
+
+###
+// GET LIST OF RESERVED SEATS OF THE SPECIFIED RESERVATION (id)
+GET {{APIURL}}/reservations/1/reservedseats
+
+
+### 
+
+// Test login
+POST {{APIURL}}/login
+Content-Type: application/json
+
+{
+    "username": "pierre@polito.it",
+    "password": "Pierre2"
+}
+
+### 
+
+// Test login
+GET {{APIURL}}/login/current
+
+
+### 
+
+// Test logout
+POST {{APIURL}}/logout
