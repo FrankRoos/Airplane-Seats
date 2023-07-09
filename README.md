@@ -83,9 +83,9 @@
 
 Here you can find a list of the users already registered inside the provided database.
 
-|         email       |   name   |      password       |
-|---------------------|----------|---------------------|
-| pierre@polito.it    | Pierre   | Pierre2             |
-| jean@polito.it      | Jean     | Jean3               | 
-| akitos@polito.it    | Akitos   | Akitos1             |
-| Angelo@polito.it    | Angelo   | Angelo4             |
+|         email       |      password       |
+|---------------------|---------------------|
+| pierre@polito.it    | Pierre2             |
+| jean@polito.it      | Jean3               | 
+| akitos@polito.it    | Akitos1             |
+| Angelo@polito.it    | Angelo4             |
